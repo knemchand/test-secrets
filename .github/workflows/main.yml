@@ -3,4 +3,4 @@ jobs:
   BUILD:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "${{ secret.MY_KEY }}"
+      - run: echo "${{ secrets.MY_KEY }}"
