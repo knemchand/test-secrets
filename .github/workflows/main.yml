@@ -1,0 +1,6 @@
+on: push
+jobs:
+  BUILD:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "{{ $secret.MY_KEY }}"
