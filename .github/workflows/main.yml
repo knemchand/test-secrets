@@ -3,5 +3,6 @@ jobs:
   BUILD:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "${{ secrets.MY_KEY }}"
-      - run: echo "${{ vars.MY_VAR }}"
+      - run: |
+          echo "MY_KEY: ${{ secrets.MY_KEY }}"
+          echo "MY_VAR: ${{ vars.MY_VAR }}"
